@@ -35,6 +35,19 @@ nav{
     position: sticky;
     top: 2px;
 }
+.navmobile{
+    display: none;
+}
+@media (max-width: 768px){
+    .navmobile {
+        display: contents;
+    }
+    .navdesktop{
+        display: none;
+    }
+}
+
+
     /* AGREGANDO STYLING A DROPDOWN DE BOOTSTRAP */
 .prodboton{
     font-family: 'Mukta', sans-serif;
