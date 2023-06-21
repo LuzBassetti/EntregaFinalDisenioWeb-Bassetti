@@ -406,6 +406,11 @@ main h1{
 #sectionfoot1{
     text-align: center;
 }
+#sectionfoot1 h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
 #sectionfoot2{
     text-align:  right;
     margin-right: 15px;
