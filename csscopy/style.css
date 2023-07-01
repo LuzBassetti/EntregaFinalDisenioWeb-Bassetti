@@ -1,0 +1,430 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+.redes{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+.redes img{
+    width: 36px;
+    height: 36px;
+    padding: 5px;
+}
+.redes li{
+    list-style-type: none;
+}
+header {
+    background-image: url('../img/barraimgindex.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+}
+@media (max-width: 768px){
+    header{
+        height: 350px;
+    }
+}
+nav{
+    font-family: 'Mukta', sans-serif;
+    font-weight: bold;
+    font-size: larger;
+    position: sticky;
+    top: 2px;
+}
+.navmobile{
+    display: none;
+}
+@media (max-width: 768px){
+    .navmobile {
+        display: contents;
+    }
+    .navdesktop{
+        display: none;
+    }
+}
+
+
+    /* AGREGANDO STYLING A DROPDOWN DE BOOTSTRAP */
+.prodboton{
+    font-family: 'Mukta', sans-serif;
+    font-weight: bold;
+    font-size: large;
+    background-color: #f75b6000;
+    border: none;
+    color: black;
+    text-shadow: rgba(255, 255, 255, 0.5) 2px 2px 4px;
+}
+.prodboton:hover{
+    background-color: #f75b6000;
+}
+.prodboton:active{
+    background-color: #f75b6000;
+}
+.prodboton:focus{
+    background-color: #f75b6000; 
+}
+.menu{
+    background-color: rgba(255, 255, 255, 0.41);
+}
+
+    /* FIN STYLING A DROPDOWN DE BOOTSTRAP */
+
+header nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+header nav ul li a {
+    color: black;
+    text-shadow: rgba(255, 255, 255, 0.5) 2px 2px 4px;
+    text-decoration: none;
+}
+.activo{
+    border-bottom: solid black 2px;
+}
+header nav ul li a:hover{
+    color: white;
+    text-shadow: rgba(19, 18, 18, 0.5) 2px 2px 4px;
+    border-bottom: none
+}
+
+/* TERMINA HEADER */
+
+/* INICIA CONTENIDO CENTRAL INDEX*/
+.mainindex{
+    display: grid;
+    grid-template-columns: 55vw 35vw;
+    grid-template-rows: auto;
+    gap: 2vw;
+    margin-right: 4vw;
+    margin-left: 4vw;
+    margin-top: 20px;
+}
+.mainindex img{
+    width: 100%;
+    height: 100%;
+}
+.contppal{
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .mainindex {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+    }
+}
+h1{
+    color: #F75B60;
+    font-family: 'Raleway', serif;
+    font-size: 45px;
+}
+#pyd{
+    font-family: 'Dancing Script', cursive;
+    font-size: 70px;
+}
+#bienvenidos, .subtitulo{
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    font-weight: bolder;
+}
+p{
+    font-family: 'Raleway', sans-serif;
+}
+
+/* FIN CONTENIDO CENTRAL INDEX*/
+
+/* INICIO CONOCE NUESTROS PRODUCTOS */
+.parte2 img{
+    width: 100vw;
+    margin-top: 30px;
+    height: 350px;
+    object-fit: cover
+}
+.subtitulo{
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.conoceprod {
+    display: grid;
+    grid-template-columns: repeat(2, 45vw);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "prodindex1 prodindex2"
+      "prodindex3 prodindex4"
+      "prodindex5 prodindex6";
+      gap: 1vw;
+      margin-left: 4vw;
+      margin-right: 4vw;
+}  
+.prodindex1 {
+    grid-area: prodindex1;
+    width: 100%;
+} 
+.prodindex2 {
+    grid-area: prodindex2;
+    width: 100%;
+} 
+.prodindex3 {
+    grid-area: prodindex3;
+    width: 100%;
+} 
+.prodindex4 {
+    grid-area: prodindex4;
+    width: 100%;
+} 
+.prodindex5 {
+    grid-area: prodindex5;
+    width: 100%;
+} 
+.prodindex6 {
+    grid-area: prodindex6;
+    width: 100%;
+}
+@media (max-width: 768px){
+    .conoceprod {
+        grid-template-columns: repeat(2, 45vw);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+          "prodindex1 prodindex2"
+          "prodindex3 prodindex4"
+          "prodindex5 prodindex6";
+          gap: 2vw;
+          margin-left: 4vw;
+          margin-right: 4vw;
+    }  
+}
+/* FIN CONOCE NUESTROS PRODUCTOS */
+
+/* INICIO CONTACTANOS */
+.contactanos{
+    background-color: blanchedalmond;
+    text-align: center;
+    margin-top: 36px;
+    display: grid;
+    grid-template-columns: repeat(2, 45vw);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "section img";
+    gap: 2vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+.contactanos img{
+    width: 100%;
+    height: 90%;
+    align-self: center;
+    justify-self:right;
+    grid-area: img
+}
+.contactanos section{
+    grid-area: section
+}
+.contactanos section p{
+    padding-bottom: 30px;
+}
+.contactanos section a{
+    font-family: 'Raleway', sans-serif;
+}
+@media (max-width: 765px){
+    .contactanos{
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: 
+        "img"
+        "section";
+        gap: 0;
+    }
+    .contactanos section{
+        align-self: center;
+        padding-top: 0;
+        margin-bottom: 30px;
+    }
+    .contactanos section h2{
+        margin-top: 0;
+    }
+}
+/* FIN CONTACTANOS */
+
+/* INICIO HTML PRODUCTOS */
+main h1{
+    text-align: center;
+    margin-top: 30px;
+}
+.sectionprodA{
+    display: grid;
+    grid-template-columns: repeat(4, 22.25vw);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    "img1 img1 texto texto"
+    "img2 img3 img4 img5";
+    gap: 1vw;
+    margin: 15px 4vw;
+}
+.sectionprodB{
+    display: grid;
+    grid-template-columns: repeat(4, 22.25vw);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    "texto texto img1 img1"
+    "img2 img3 img4 img5";
+    gap: 1vw;
+    margin: 36px 4vw;
+}
+.imgprod1{
+    grid-area: img1;
+    width: 100%;
+}
+.textoprod{
+    grid-area: texto;
+    width: 100%;
+}
+.textoprod h2, .textoprod p{
+    text-align: left;
+}
+.imgprod2{
+    grid-area: img2;
+    width: 100%;
+}
+.imgprod3{
+    grid-area: img3;
+    width: 100%;
+}
+.imgprod4{
+    grid-area: img4;
+    width: 100%;
+}
+.imgprod5{
+    grid-area: img5;
+    width: 100%;
+}
+/* FIN HTML PRODUCTOS */
+
+/* INICIO HTML HISTORIA*/
+.mainhistoria{
+    display: grid;
+    grid-template-columns: repeat(3, 15vw) 44vw;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "img1 img1 img1 texto"
+    "img2 img3 img4 texto";
+    gap: 1vw;
+    margin: 30px 4vw;
+}
+.hist1{
+    grid-area: img1;
+    width: 100%;
+}
+.hist2{
+    grid-area: img2;
+    width: 100%;
+}
+.hist3{
+    grid-area: img3;
+    width: 100%;
+}
+.hist4{
+    grid-area: img4;
+    width: 100%;
+}
+.contppalhistoria{
+    width: 100%;
+    grid-area: texto;
+    text-align: center;
+    margin-bottom: 15px;
+}
+@media (max-width:768px){
+    .mainhistoria{
+    grid-template-columns:repeat(3, 30vw);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+    "img1 img1 img1"
+    "texto texto texto"
+    "img2 img3 img4";
+    gap: 1vw;
+    }
+}
+/* FIN HTML HISTORIA*/
+
+/* INICIO MAIN COMO HACER PEDIDO*/
+/* .mainpedido h1{
+    text-align: center;
+}
+.contppalpedido{
+    display: flex;
+}
+.contppalpedido ul, .contppalpedido img{
+    width: 50%;
+    margin: 15px;
+} */
+.contppalpedido{
+    display: grid;
+    grid-template-columns: repeat(2, 45vw);
+    grid-template-rows: auto;
+    gap: 2vw;
+    margin: 15px 4vw;
+}
+.contppalpedido ul, .contppalpedido img{
+    width: 100%;
+}
+/* FIN MAIN COMO HACER PEDIDO */
+
+/* INICIO MAIN CONTACTO */
+.maincontacto{
+    text-align: center;
+}
+.contcentral{
+    display: flex;
+    margin: 15px;
+}
+.contacto1, .contacto2{
+    width: 50%;
+    margin: 50px;
+}
+.contacto1{
+    font-family: 'Raleway', sans-serif !important;
+}
+/* FIN MAIN CONTACTO */
+
+/* INICIO PIE DE PAGINA */
+#pie{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    background-color:plum;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Raleway', sans-serif;
+}
+#pie a{
+    text-align:  left;
+}
+#sectionfoot1{
+    text-align: center;
+}
+#sectionfoot1 h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+#sectionfoot2{
+    text-align:  right;
+    margin-right: 15px;
+}
+.telefono, .mail{
+    display: flex;
+    font-family: 'Raleway', sans-serif !important;
+}
+.telefono img, .mail img{
+    width: 36px;
+    height: 36px;
+    padding: 5px;
+}
+/* FIN PIE DE PAGINA */
