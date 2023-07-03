@@ -1,0 +1,21 @@
+.prodboton{
+    font-family: $font-sec;
+    font-weight: map-get($formato , peso);
+    font-size: map-get($formato , size);
+    background-color: #f75b6000;
+    border: none;
+    color: black;
+    text-shadow: rgba(255, 255, 255, 0.5) 2px 2px 4px;
+    &hover{
+        background-color: #f75b6000;
+    }
+    &active{
+        background-color: #f75b6000;
+    }
+    &focus{
+        background-color: #f75b6000; 
+    }
+}
+.menu{
+    background-color: rgba(255, 255, 255, 0.41);
+}

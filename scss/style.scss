@@ -1,10 +1,19 @@
 // IMPORTO ABSTRACTS
-
-
-
+@import './abstract/variables';
+@import './abstract/mixin';
+@import './abstract/extend';
+@import './abstract/mapas';
 // FIN ABSTACTS
 
 // IMPORTO COMPONENTES
-
-
+@import './componentes/clasesBS';
+@import './componentes/footer';
+@import './componentes/header';
+@import './componentes/html1Productos';
+@import './componentes/html2Historia';
+@import './componentes/html3ComoHacerPedido';
+@import './componentes/html4Contacto';
+@import './componentes/index1ContPpal';
+@import './componentes/index2NuestrosProd';
+@import './componentes/index3Contactanos';
 // FIN COMPONENTES

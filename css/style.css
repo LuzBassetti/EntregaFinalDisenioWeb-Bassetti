@@ -1,3 +1,24 @@
+.prodboton {
+  font-family: "Mukta", sans-serif;
+  font-weight: bold;
+  font-size: large;
+  background-color: rgba(247, 91, 96, 0);
+  border: none;
+  color: black;
+  text-shadow: rgba(255, 255, 255, 0.5) 2px 2px 4px;
+}
+.prodbotonhover {
+  background-color: rgba(247, 91, 96, 0);
+}
+.prodbotonactive {
+  background-color: rgba(247, 91, 96, 0);
+}
+.prodbotonfocus {
+  background-color: rgba(247, 91, 96, 0);
+}
 
+.menu {
+  background-color: rgba(255, 255, 255, 0.41);
+}
 
 /*# sourceMappingURL=style.css.map */

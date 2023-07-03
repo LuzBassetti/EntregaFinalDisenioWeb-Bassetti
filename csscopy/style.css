@@ -10,8 +10,8 @@
     margin-right: 10px;
 }
 .redes img{
-    width: 36px;
-    height: 36px;
+    width: 45px;
+    height: 45px;
     padding: 5px;
 }
 .redes li{
@@ -134,7 +134,7 @@ h1{
     font-weight: bolder;
 }
 p{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', serif;
 }
 
 /* FIN CONTENIDO CENTRAL INDEX*/
@@ -354,16 +354,7 @@ main h1{
 /* FIN HTML HISTORIA*/
 
 /* INICIO MAIN COMO HACER PEDIDO*/
-/* .mainpedido h1{
-    text-align: center;
-}
-.contppalpedido{
-    display: flex;
-}
-.contppalpedido ul, .contppalpedido img{
-    width: 50%;
-    margin: 15px;
-} */
+
 .contppalpedido{
     display: grid;
     grid-template-columns: repeat(2, 45vw);
