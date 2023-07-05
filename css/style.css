@@ -78,6 +78,10 @@ header nav ul li a:hover {
   border-bottom: solid black 2px;
 }
 
+.navmobile {
+  display: none;
+}
+
 @media (max-width: 768px) {
   header {
     height: 350px;
@@ -194,14 +198,15 @@ h1 {
 .contactanos {
   background-color: #f8f3dd;
   text-align: center;
-  margin-top: 36px;
   display: grid;
   grid-template-columns: repeat(2, 45vw);
   grid-template-rows: auto;
-  grid-template-areas: "section img";
   gap: 2vw;
+  margin: 0;
+  grid-template-areas: "section img";
   padding-left: 4vw;
   padding-right: 4vw;
+  margin-top: 36px;
 }
 .contactanos img {
   width: 100%;
@@ -217,15 +222,18 @@ h1 {
   padding-bottom: 30px;
 }
 .contactanos section a {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", serif;
 }
 
 @media (max-width: 765px) {
   .contactanos {
+    display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(2, auto);
-    grid-template-areas: "img" "section";
     gap: 0;
+    margin: 0;
+    grid-template-areas: "img" "section";
+    margin-top: 36px;
   }
   .contactanos section {
     align-self: center;

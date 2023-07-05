@@ -1,22 +1,19 @@
 .contactanos{
     background-color: darken(nth($paletacolores , 3),0.3);
     text-align: center;
-    margin-top: 36px;
-    display: grid;
-    grid-template-columns: repeat(2, 45vw);
-    grid-template-rows: auto;
+    @include grids(grid, repeat(2, 45vw), auto, 2vw, 0);
     grid-template-areas:
     "section img";
-    gap: 2vw;
     padding-left: 4vw;
     padding-right: 4vw;
+    margin-top: 36px;
 
     img{
         width: 100%;
         height: 90%;
         align-self: center;
         justify-self:right;
-        grid-area: img
+        grid-area: img;
     }
     section{
         grid-area: section;
@@ -24,19 +21,18 @@
             padding-bottom: 30px;
         }
         a{
-            font-family: 'Raleway', sans-serif;
+            font-family: $font-ppal;
         }
     }
 }
 
 @media (max-width: 765px){
     .contactanos{
-        grid-template-columns: auto;
-        grid-template-rows: repeat(2, auto);
+        @include grids(grid, auto, repeat(2, auto), 0, 0);
         grid-template-areas: 
         "img"
         "section";
-        gap: 0;
+        margin-top: 36px;
     }
     .contactanos section{
         align-self: center;
