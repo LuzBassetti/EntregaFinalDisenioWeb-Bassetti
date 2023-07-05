@@ -1,11 +1,4 @@
-// CONFIGURACION INICIAL
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    color: black;
-    font-family: 'Raleway', serif;
-}
+
 
 // IMPORTO ABSTRACTS
 @import './abstract/variables';
@@ -14,16 +7,25 @@
 @import './abstract/mapas';
 // FIN ABSTACTS
 
+// CONFIGURACION INICIAL
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: nth($paletacolores , 7);
+    font-family: $font-ppal
+}
+
 // IMPORTO COMPONENTES
 @import './componentes/clasesBS';
-@import './componentes/footer';
 @import './componentes/header';
+@import './componentes/index1ContPpal';
+@import './componentes/index2NuestrosProd';
+@import './componentes/index3Contactanos';
 @import './componentes/html1Productos';
 @import './componentes/html2Historia';
 @import './componentes/html3ComoHacerPedido';
 @import './componentes/html4Contacto';
-@import './componentes/index1ContPpal';
-@import './componentes/index2NuestrosProd';
-@import './componentes/index3Contactanos';
+@import './componentes/footer';
 // FIN COMPONENTES
 

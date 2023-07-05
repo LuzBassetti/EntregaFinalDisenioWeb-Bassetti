@@ -1,0 +1,43 @@
+.mainhistoria{
+    display: grid;
+    grid-template-columns: repeat(3, 15vw) 44vw;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "img1 img1 img1 texto"
+    "img2 img3 img4 texto";
+    gap: 1vw;
+    margin: 30px 4vw;
+}
+.hist1{
+    grid-area: img1;
+    width: 100%;
+}
+.hist2{
+    grid-area: img2;
+    width: 100%;
+}
+.hist3{
+    grid-area: img3;
+    width: 100%;
+}
+.hist4{
+    grid-area: img4;
+    width: 100%;
+}
+.contppalhistoria{
+    width: 100%;
+    grid-area: texto;
+    text-align: center;
+    margin-bottom: 15px;
+}
+@media (max-width:768px){
+    .mainhistoria{
+    grid-template-columns:repeat(3, 30vw);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+    "img1 img1 img1"
+    "texto texto texto"
+    "img2 img3 img4";
+    gap: 1vw;
+    }
+}

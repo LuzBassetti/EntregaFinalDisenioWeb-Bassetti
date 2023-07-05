@@ -11,28 +11,15 @@
     margin-bottom: 10px;
 }
 .conoceprod {
-    display: grid;
-    grid-template-columns: repeat(2, 45vw);
-    grid-template-rows: repeat(3, auto);
+    @include grids(grid, repeat(2, 45vw), repeat(3, auto), 2vw, 4vw);
     grid-template-areas:
       "prodindex1 prodindex2"
       "prodindex3 prodindex4"
       "prodindex5 prodindex6";
-      gap: 1vw;
-      margin-left: 4vw;
-      margin-right: 4vw;
 }  
 @media (max-width: 768px){
     .conoceprod {
-        grid-template-columns: repeat(2, 45vw);
-        grid-template-rows: repeat(3, auto);
-        grid-template-areas:
-          "prodindex1 prodindex2"
-          "prodindex3 prodindex4"
-          "prodindex5 prodindex6";
-          gap: 2vw;
-          margin-left: 4vw;
-          margin-right: 4vw;
+        @include grids(grid, auto, repeat(6, auto), 1vw, 4vw);
     }  
 }
 .prodindex1 {

@@ -1,0 +1,31 @@
+#pie{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    background-color: nth($paletacolores, 4);
+    display: flex;
+    justify-content: space-between;
+    font-family: $font-ppal;
+    a{
+        text-align:  left;
+    }
+}
+#sectionfoot1{
+    text-align: center;
+    h3{
+        font-family: map-get($formato, font1);
+        font-size: map-get($formato, size);
+        font-weight: map-get($formato, peso);
+    }
+}
+#sectionfoot2{
+    text-align:  right;
+    margin-right: 15px;
+}
+.telefono, .mail{
+    display: flex;
+    font-family: $font-ppal !important;
+    img{
+        @extend %logos;
+    }
+}

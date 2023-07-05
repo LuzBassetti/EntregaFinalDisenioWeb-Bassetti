@@ -1,0 +1,51 @@
+main h1{
+    text-align: center;
+    margin-top: 30px;
+}
+.sectionprodA{
+    display: grid;
+    grid-template-columns: repeat(4, 22.25vw);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    "img1 img1 texto texto"
+    "img2 img3 img4 img5";
+    gap: 1vw;
+    margin: 15px 4vw;
+}
+.sectionprodB{
+    display: grid;
+    grid-template-columns: repeat(4, 22.25vw);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    "texto texto img1 img1"
+    "img2 img3 img4 img5";
+    gap: 1vw;
+    margin: 36px 4vw;
+}
+.imgprod1{
+    grid-area: img1;
+    width: 100%;
+}
+.textoprod{
+    grid-area: texto;
+    width: 100%;
+}
+.textoprod h2, .textoprod p{
+    text-align: left;
+}
+.imgprod2{
+    grid-area: img2;
+    width: 100%;
+}
+.imgprod3{
+    grid-area: img3;
+    width: 100%;
+}
+.imgprod4{
+    grid-area: img4;
+    width: 100%;
+}
+.imgprod5{
+    grid-area: img5;
+    width: 100%;
+}

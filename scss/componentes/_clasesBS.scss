@@ -1,10 +1,10 @@
 .prodboton{
-    font-family: $font-sec;
+    font-family: map-get($formato , font2);
     font-weight: map-get($formato , peso);
     font-size: map-get($formato , size);
     background-color: #f75b6000;
     border: none;
-    color: black;
+    color: nth($paletacolores , 7 );
     text-shadow: rgba(255, 255, 255, 0.5) 2px 2px 4px;
     &:hover{
         background-color: #f75b6000;
