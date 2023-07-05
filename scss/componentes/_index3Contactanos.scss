@@ -1,0 +1,49 @@
+.contactanos{
+    background-color: blanchedalmond;
+    text-align: center;
+    margin-top: 36px;
+    display: grid;
+    grid-template-columns: repeat(2, 45vw);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "section img";
+    gap: 2vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    
+    img{
+        width: 100%;
+        height: 90%;
+        align-self: center;
+        justify-self:right;
+        grid-area: img
+    }
+    section{
+        grid-area: section;
+        p{
+            padding-bottom: 30px;
+        }
+        a{
+            font-family: 'Raleway', sans-serif;
+        }
+    }
+}
+
+@media (max-width: 765px){
+    .contactanos{
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: 
+        "img"
+        "section";
+        gap: 0;
+    }
+    .contactanos section{
+        align-self: center;
+        padding-top: 0;
+        margin-bottom: 30px;
+    }
+    .contactanos section h2{
+        margin-top: 0;
+    }
+}
