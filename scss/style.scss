@@ -1,11 +1,8 @@
-
-
 // IMPORTO ABSTRACTS
 @import './abstract/variables';
 @import './abstract/mixin';
-@import './abstract/extend';
 @import './abstract/mapas';
-// FIN ABSTACTS
+
 
 // CONFIGURACION INICIAL
 * {
@@ -15,6 +12,9 @@
     color: nth($paletacolores , 7);
     font-family: $font-ppal
 }
+
+// IMPORTO EXTEND para que config no vuelva a 0 con la config inicial
+@import './abstract/extend';
 
 // IMPORTO COMPONENTES
 @import './componentes/clasesBS';
