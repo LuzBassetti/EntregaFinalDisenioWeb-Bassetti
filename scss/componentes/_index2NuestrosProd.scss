@@ -11,7 +11,7 @@
     margin-bottom: 10px;
 }
 .conoceprod {
-    @include grids(grid, repeat(2, 45vw), repeat(3, auto), 2vw, 4vw);
+    @include grids(grid, repeat(2, 45vw), repeat(3, auto), 2vw, 10px 4vw);
     grid-template-areas:
       "prodindex1 prodindex2"
       "prodindex3 prodindex4"

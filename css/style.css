@@ -154,7 +154,7 @@ h1 {
   grid-template-columns: repeat(2, 45vw);
   grid-template-rows: repeat(3, auto);
   gap: 2vw;
-  margin: 4vw;
+  margin: 10px 4vw;
   grid-template-areas: "prodindex1 prodindex2" "prodindex3 prodindex4" "prodindex5 prodindex6";
 }
 
