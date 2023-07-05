@@ -1,9 +1,5 @@
 .contppalpedido{
-    display: grid;
-    grid-template-columns: repeat(2, 45vw);
-    grid-template-rows: auto;
-    gap: 2vw;
-    margin: 15px 4vw;
+    @include grids(grid, repeat(2, 45vw), auto, 2vw, 15px 4vw);
     ul{
         width: 100%;
     }

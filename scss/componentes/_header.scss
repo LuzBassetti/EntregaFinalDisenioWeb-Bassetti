@@ -3,17 +3,6 @@ header {
     background-size: cover;
     width: 100%;
     height: 450px;
-    .redes {
-        display: flex;
-        justify-content: flex-end;
-        margin-right: 10px;
-        img {
-            @extend %logos
-        }
-        li {
-            list-style-type: none;
-        }
-    }
     nav {
         font-family: map-get($formato, font2);
         font-weight: map-get($formato, peso);
@@ -39,7 +28,17 @@ header {
         }
     }
 }
-
+.redes {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    img {
+        @extend %logos
+    }
+    li {
+        list-style-type: none;
+    }
+}
 .activo{
     border-bottom: solid black 2px;
 }

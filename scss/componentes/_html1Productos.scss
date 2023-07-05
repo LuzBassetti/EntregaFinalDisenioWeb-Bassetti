@@ -3,24 +3,16 @@ main h1{
     margin-top: 30px;
 }
 .sectionprodA{
-    display: grid;
-    grid-template-columns: repeat(4, 22.25vw);
-    grid-template-rows: repeat(2, auto);
+    @include grids(grid, repeat(4, 22.25vw), repeat(2, auto), 1vw, 15px 4vw);
     grid-template-areas: 
     "img1 img1 texto texto"
     "img2 img3 img4 img5";
-    gap: 1vw;
-    margin: 15px 4vw;
 }
 .sectionprodB{
-    display: grid;
-    grid-template-columns: repeat(4, 22.25vw);
-    grid-template-rows: repeat(2, auto);
+    @include grids(grid, repeat(4, 22.25vw), repeat(2, auto), 1vw, 36px 4vw);
     grid-template-areas: 
     "texto texto img1 img1"
     "img2 img3 img4 img5";
-    gap: 1vw;
-    margin: 36px 4vw;
 }
 .imgprod1{
     grid-area: img1;

@@ -1,4 +1,4 @@
-.telefono img, .mail img, header .redes img {
+.telefono img, .mail img, .redes img {
   width: 36px;
   height: 36px;
   padding: 5px;
@@ -41,14 +41,6 @@ header {
   width: 100%;
   height: 450px;
 }
-header .redes {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 10px;
-}
-header .redes li {
-  list-style-type: none;
-}
 header nav {
   font-family: "Mukta";
   font-weight: bold;
@@ -72,6 +64,15 @@ header nav ul li a:hover {
   color: white;
   text-shadow: rgba(19, 18, 18, 0.5) 2px 2px 4px;
   border-bottom: none;
+}
+
+.redes {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+.redes li {
+  list-style-type: none;
 }
 
 .activo {
@@ -253,18 +254,18 @@ main h1 {
   display: grid;
   grid-template-columns: repeat(4, 22.25vw);
   grid-template-rows: repeat(2, auto);
-  grid-template-areas: "img1 img1 texto texto" "img2 img3 img4 img5";
   gap: 1vw;
   margin: 15px 4vw;
+  grid-template-areas: "img1 img1 texto texto" "img2 img3 img4 img5";
 }
 
 .sectionprodB {
   display: grid;
   grid-template-columns: repeat(4, 22.25vw);
   grid-template-rows: repeat(2, auto);
-  grid-template-areas: "texto texto img1 img1" "img2 img3 img4 img5";
   gap: 1vw;
   margin: 36px 4vw;
+  grid-template-areas: "texto texto img1 img1" "img2 img3 img4 img5";
 }
 
 .imgprod1 {
@@ -304,10 +305,10 @@ main h1 {
 .mainhistoria {
   display: grid;
   grid-template-columns: repeat(3, 15vw) 44vw;
-  grid-template-rows: auto auto;
-  grid-template-areas: "img1 img1 img1 texto" "img2 img3 img4 texto";
+  grid-template-rows: repeat(2, auto);
   gap: 1vw;
   margin: 30px 4vw;
+  grid-template-areas: "img1 img1 img1 texto" "img2 img3 img4 texto";
 }
 
 .hist1 {
@@ -339,10 +340,12 @@ main h1 {
 
 @media (max-width: 768px) {
   .mainhistoria {
+    display: grid;
     grid-template-columns: repeat(3, 30vw);
     grid-template-rows: repeat(3, auto);
-    grid-template-areas: "img1 img1 img1" "texto texto texto" "img2 img3 img4";
     gap: 1vw;
+    margin: 30px 4vw;
+    grid-template-areas: "img1 img1 img1" "texto texto texto" "img2 img3 img4";
   }
 }
 .contppalpedido {
@@ -374,14 +377,14 @@ main h1 {
 }
 
 .contacto1 {
-  font-family: "Raleway", sans-serif !important;
+  font-family: "Raleway", serif !important;
 }
 
 #pie {
   padding-top: 10px;
   padding-left: 10px;
   padding-bottom: 10px;
-  background-color: #F4C8B2;
+  background-color: #f39288;
   display: flex;
   justify-content: space-between;
   font-family: "Raleway", serif;

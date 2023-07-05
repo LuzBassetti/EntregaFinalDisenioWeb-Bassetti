@@ -1,12 +1,8 @@
 .mainhistoria{
-    display: grid;
-    grid-template-columns: repeat(3, 15vw) 44vw;
-    grid-template-rows: auto auto;
+    @include grids(grid, repeat(3, 15vw) 44vw, repeat(2, auto), 1vw, 30px 4vw);
     grid-template-areas:
     "img1 img1 img1 texto"
     "img2 img3 img4 texto";
-    gap: 1vw;
-    margin: 30px 4vw;
 }
 .hist1{
     grid-area: img1;
@@ -32,12 +28,10 @@
 }
 @media (max-width:768px){
     .mainhistoria{
-    grid-template-columns:repeat(3, 30vw);
-    grid-template-rows: repeat(3, auto);
+    @include grids(grid, repeat(3, 30vw), repeat(3, auto), 1vw, 30px 4vw);
     grid-template-areas:
     "img1 img1 img1"
     "texto texto texto"
     "img2 img3 img4";
-    gap: 1vw;
     }
 }
