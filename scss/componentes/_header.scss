@@ -28,15 +28,15 @@ header {
         }
     }
 }
-.redes {
+.redes{
     display: flex;
     justify-content: flex-end;
     margin-right: 10px;
-    img {
-        @extend %logos
-    }
     li {
         list-style-type: none;
+    }
+    img {
+        @extend %logos
     }
 }
 .activo{

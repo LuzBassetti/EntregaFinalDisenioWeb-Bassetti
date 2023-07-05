@@ -74,7 +74,6 @@ header nav ul li a:hover {
 .redes li {
   list-style-type: none;
 }
-
 .activo {
   border-bottom: solid black 2px;
 }
@@ -98,7 +97,7 @@ header nav ul li a:hover {
 }
 .mainindex {
   display: grid;
-  grid-template-columns: 55vw 35vw;
+  grid-template-columns: 52vw 38vw;
   grid-template-rows: auto;
   gap: 2vw;
   margin: 20px 4vw;
@@ -138,10 +137,15 @@ h1 {
 .parte2 img {
   width: 100vw;
   margin-top: 30px;
-  height: 350px;
+  height: 500px;
   object-fit: cover;
 }
 
+@media (max-width: 768px) {
+  .parte2 img {
+    height: 350px;
+  }
+}
 .subtitulo {
   text-align: center;
   flex-wrap: wrap;
@@ -385,7 +389,7 @@ main h1 {
   padding-top: 10px;
   padding-left: 10px;
   padding-bottom: 10px;
-  background-color: #f39288;
+  background-color: #8e6b5b;
   display: flex;
   justify-content: space-between;
   font-family: "Raleway", serif;
@@ -411,11 +415,6 @@ main h1 {
 .telefono, .mail {
   display: flex;
   font-family: "Raleway", serif !important;
-}
-.redesfooter {
-  width: 36px;
-  height: 36px;
-  padding: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

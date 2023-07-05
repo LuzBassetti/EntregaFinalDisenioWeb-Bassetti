@@ -2,7 +2,7 @@
     padding-top: 10px;
     padding-left: 10px;
     padding-bottom: 10px;
-    background-color: mix(nth($paletacolores, 4), nth($paletacolores, 2));
+    background-color: mix(nth($paletacolores, 6), nth($paletacolores, 4));
     display: flex;
     justify-content: space-between;
     font-family: $font-ppal;
@@ -29,8 +29,4 @@
         @extend %logos;
     }
 }
-.redesfooter{
-    width: 36px;
-    height: 36px;
-    padding: 5px;  
-}
+
