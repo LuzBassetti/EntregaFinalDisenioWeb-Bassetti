@@ -412,5 +412,10 @@ main h1 {
   display: flex;
   font-family: "Raleway", serif !important;
 }
+.redesfooter {
+  width: 36px;
+  height: 36px;
+  padding: 5px;
+}
 
 /*# sourceMappingURL=style.css.map */
