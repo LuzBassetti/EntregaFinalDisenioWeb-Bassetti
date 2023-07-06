@@ -7,8 +7,8 @@
 }
 
 .telefono img, .mail img, .redes img {
-  width: 36px;
-  height: 36px;
+  width: 45px;
+  height: 45px;
   padding: 5px;
 }
 
@@ -33,6 +33,21 @@
 
 .menu {
   background-color: rgba(255, 255, 255, 0.41);
+}
+
+.botonindex {
+  background-color: #280E04;
+  border-color: #280E04;
+  transition: all 0.5s;
+}
+.botonindex a {
+  color: white;
+}
+.botonindex:hover {
+  background-color: #561e09;
+  border-color: #561e09;
+  color: white;
+  transform: scale(1.1);
 }
 
 header {
@@ -137,7 +152,7 @@ h1 {
 .parte2 img {
   width: 100vw;
   margin-top: 30px;
-  height: 500px;
+  height: 600px;
   object-fit: cover;
 }
 
@@ -156,7 +171,7 @@ h1 {
 .conoceprod {
   display: grid;
   grid-template-columns: repeat(2, 45vw);
-  grid-template-rows: repeat(3, auto);
+  grid-template-rows: repeat(3, 350px);
   gap: 2vw;
   margin: 10px 4vw;
   grid-template-areas: "prodindex1 prodindex2" "prodindex3 prodindex4" "prodindex5 prodindex6";
@@ -173,32 +188,38 @@ h1 {
 }
 .prodindex1 {
   grid-area: prodindex1;
+  height: 100%;
   width: 100%;
 }
 
 .prodindex2 {
   grid-area: prodindex2;
+  height: 100%;
   width: 100%;
 }
 
 .prodindex3 {
   grid-area: prodindex3;
   width: 100%;
+  height: 100%;
 }
 
 .prodindex4 {
   grid-area: prodindex4;
   width: 100%;
+  height: 100%;
 }
 
 .prodindex5 {
   grid-area: prodindex5;
   width: 100%;
+  height: 100%;
 }
 
 .prodindex6 {
   grid-area: prodindex6;
   width: 100%;
+  height: 100%;
 }
 
 .contactanos {
@@ -206,7 +227,7 @@ h1 {
   text-align: center;
   display: grid;
   grid-template-columns: repeat(2, 45vw);
-  grid-template-rows: auto;
+  grid-template-rows: 500px;
   gap: 2vw;
   margin: 0;
   grid-template-areas: "section img";
@@ -216,6 +237,7 @@ h1 {
 }
 .contactanos img {
   width: 100%;
+  object-fit: contain;
   height: 90%;
   align-self: center;
   justify-self: right;

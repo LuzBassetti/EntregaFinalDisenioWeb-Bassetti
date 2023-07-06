@@ -1,7 +1,7 @@
 .contactanos{
     background-color: darken(nth($paletacolores , 3),0.3);
     text-align: center;
-    @include grids(grid, repeat(2, 45vw), auto, 2vw, 0);
+    @include grids(grid, repeat(2, 45vw), 500px , 2vw, 0);
     grid-template-areas:
     "section img";
     padding-left: 4vw;
@@ -10,6 +10,7 @@
 
     img{
         width: 100%;
+        object-fit:contain;
         height: 90%;
         align-self: center;
         justify-self:right;

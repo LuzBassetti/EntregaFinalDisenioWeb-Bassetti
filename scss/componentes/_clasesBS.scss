@@ -19,3 +19,18 @@
 .menu{
     background-color: rgba(255, 255, 255, 0.41);
 }
+
+.botonindex{
+    background-color: nth($paletacolores, 6);
+    border-color: nth($paletacolores, 6);
+    transition: all 0.5s;
+    a{
+        color: nth($paletacolores, 8);
+    }
+    &:hover{
+        background-color: lighten(nth($paletacolores, 6), 10);
+        border-color: lighten(nth($paletacolores, 6), 10);
+        color: nth($paletacolores, 8);
+        transform: scale(1.1);
+    }
+}

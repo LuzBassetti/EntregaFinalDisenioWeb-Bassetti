@@ -1,17 +1,17 @@
-* {
+/* * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     color: black;
-}
-.redes{
+} */
+/* .redes{
     display: flex;
     justify-content: flex-end;
     margin-right: 10px;
 }
 .redes img{
-    width: 45px;
-    height: 45px;
+    width: 36px;
+    height: 36px;
     padding: 5px;
 }
 .redes li{
@@ -45,11 +45,11 @@ nav{
     .navdesktop{
         display: none;
     }
-}
+} */
 
 
     /* AGREGANDO STYLING A DROPDOWN DE BOOTSTRAP */
-.prodboton{
+/* .prodboton{
     font-family: 'Mukta', sans-serif;
     font-weight: bold;
     font-size: large;
@@ -69,11 +69,11 @@ nav{
 }
 .menu{
     background-color: rgba(255, 255, 255, 0.41);
-}
+} */
 
     /* FIN STYLING A DROPDOWN DE BOOTSTRAP */
 
-header nav ul{
+/* header nav ul{
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
@@ -92,12 +92,12 @@ header nav ul li a:hover{
     color: white;
     text-shadow: rgba(19, 18, 18, 0.5) 2px 2px 4px;
     border-bottom: none
-}
+} */
 
-/* TERMINA HEADER */
+    /* TERMINA HEADER */
 
-/* INICIA CONTENIDO CENTRAL INDEX*/
-.mainindex{
+    /* INICIA CONTENIDO CENTRAL INDEX*/
+/* .mainindex{
     display: grid;
     grid-template-columns: 55vw 35vw;
     grid-template-rows: auto;
@@ -135,12 +135,12 @@ h1{
 }
 p{
     font-family: 'Raleway', serif;
-}
+} */
 
-/* FIN CONTENIDO CENTRAL INDEX*/
+    /* FIN CONTENIDO CENTRAL INDEX*/
 
-/* INICIO CONOCE NUESTROS PRODUCTOS */
-.parte2 img{
+    /* INICIO CONOCE NUESTROS PRODUCTOS */
+/* .parte2 img{
     width: 100vw;
     margin-top: 30px;
     height: 350px;
@@ -200,11 +200,11 @@ p{
           margin-left: 4vw;
           margin-right: 4vw;
     }  
-}
-/* FIN CONOCE NUESTROS PRODUCTOS */
+} */
+    /* FIN CONOCE NUESTROS PRODUCTOS */
 
-/* INICIO CONTACTANOS */
-.contactanos{
+    /* INICIO CONTACTANOS */
+/* .contactanos{
     background-color: blanchedalmond;
     text-align: center;
     margin-top: 36px;
@@ -250,11 +250,11 @@ p{
     .contactanos section h2{
         margin-top: 0;
     }
-}
-/* FIN CONTACTANOS */
+} */
+    /* FIN CONTACTANOS */
 
-/* INICIO HTML PRODUCTOS */
-main h1{
+    /* INICIO HTML PRODUCTOS */
+/* main h1{
     text-align: center;
     margin-top: 30px;
 }
@@ -304,11 +304,11 @@ main h1{
 .imgprod5{
     grid-area: img5;
     width: 100%;
-}
-/* FIN HTML PRODUCTOS */
+} */
+    /* FIN HTML PRODUCTOS */
 
-/* INICIO HTML HISTORIA*/
-.mainhistoria{
+    /* INICIO HTML HISTORIA*/
+/* .mainhistoria{
     display: grid;
     grid-template-columns: repeat(3, 15vw) 44vw;
     grid-template-rows: auto auto;
@@ -350,12 +350,11 @@ main h1{
     "img2 img3 img4";
     gap: 1vw;
     }
-}
-/* FIN HTML HISTORIA*/
+} */
+    /* FIN HTML HISTORIA*/
 
-/* INICIO MAIN COMO HACER PEDIDO*/
-
-.contppalpedido{
+    /* INICIO MAIN COMO HACER PEDIDO*/
+/* .contppalpedido{
     display: grid;
     grid-template-columns: repeat(2, 45vw);
     grid-template-rows: auto;
@@ -364,11 +363,11 @@ main h1{
 }
 .contppalpedido ul, .contppalpedido img{
     width: 100%;
-}
-/* FIN MAIN COMO HACER PEDIDO */
+} */
+    /* FIN MAIN COMO HACER PEDIDO */
 
-/* INICIO MAIN CONTACTO */
-.maincontacto{
+    /* INICIO MAIN CONTACTO */
+/* .maincontacto{
     text-align: center;
 }
 .contcentral{
@@ -381,10 +380,10 @@ main h1{
 }
 .contacto1{
     font-family: 'Raleway', sans-serif !important;
-}
-/* FIN MAIN CONTACTO */
+} */
+    /* FIN MAIN CONTACTO */
 
-/* INICIO PIE DE PAGINA */
+    /* INICIO PIE DE PAGINA */
 #pie{
     padding-top: 10px;
     padding-left: 10px;

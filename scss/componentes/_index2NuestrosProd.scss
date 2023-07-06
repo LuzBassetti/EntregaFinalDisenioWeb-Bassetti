@@ -1,7 +1,7 @@
 .parte2 img{
     width: 100vw;
     margin-top: 30px;
-    height: 500px;
+    height: 600px;
     object-fit: cover
 }
 
@@ -19,7 +19,7 @@
 }
 
 .conoceprod {
-    @include grids(grid, repeat(2, 45vw), repeat(3, auto), 2vw, 10px 4vw);
+    @include grids(grid, repeat(2, 45vw), repeat(3, 350px), 2vw, 10px 4vw);
     grid-template-areas:
         "prodindex1 prodindex2"
         "prodindex3 prodindex4"
@@ -34,30 +34,36 @@
 
 .prodindex1 {
     grid-area: prodindex1;
+    height: 100%;
     width: 100%;
 }
 
 .prodindex2 {
     grid-area: prodindex2;
+    height: 100%;
     width: 100%;
 }
 
 .prodindex3 {
     grid-area: prodindex3;
     width: 100%;
+    height: 100%;
 }
 
 .prodindex4 {
     grid-area: prodindex4;
     width: 100%;
+    height: 100%;
 }
 
 .prodindex5 {
     grid-area: prodindex5;
     width: 100%;
+    height: 100%;
 }
 
 .prodindex6 {
     grid-area: prodindex6;
     width: 100%;
+    height: 100%;
 }
