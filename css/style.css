@@ -453,19 +453,37 @@ main h1 {
 }
 
 .contcentral {
-  display: flex;
-  margin: 15px;
-}
-
-.contacto1, .contacto2 {
-  width: 50%;
-  margin: 50px;
+  display: grid;
+  grid-template-columns: 45vw 45vw;
+  grid-template-rows: auto auto;
+  gap: 2vw;
+  margin: 15px 4vw;
+  grid-template-areas: "contacto1 contacto3" "contacto2 contacto3";
 }
 
 .contacto1 {
-  font-family: "Raleway", serif !important;
+  grid-area: contacto1;
+  align-self: center;
 }
 
+.contacto2 {
+  grid-area: contacto2;
+}
+
+.contacto3 {
+  grid-area: contacto3;
+}
+
+@media (max-width: 768px) {
+  .contcentral {
+    display: grid;
+    grid-template-columns: 90vw;
+    grid-template-rows: repeat(3, auto);
+    gap: 2vw;
+    margin: 15px 4vw;
+    grid-template-areas: "contacto1" "contacto2" "contacto3";
+  }
+}
 #pie {
   padding-top: 10px;
   padding-left: 10px;

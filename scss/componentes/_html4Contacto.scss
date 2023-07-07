@@ -2,13 +2,30 @@
     text-align: center;
 }
 .contcentral{
-    display: flex;
-    margin: 15px;
+    @include grids(grid, 45vw 45vw, auto auto, 2vw, 15px 4vw);
+    grid-template-areas:
+    "contacto1 contacto3"
+    "contacto2 contacto3";
 }
-.contacto1, .contacto2{
-    width: 50%;
-    margin: 50px;
-}
+
 .contacto1{
-    font-family: $font-ppal !important;
+    grid-area: contacto1;
+    align-self: center;
+}
+.contacto2{
+    grid-area: contacto2;
+}
+.contacto3{
+    grid-area: contacto3;
+}
+
+@media (max-width: 768px){
+    .contcentral{
+        @include grids(grid, 90vw, repeat(3, auto), 2vw, 15px 4vw);
+        grid-template-areas:
+        "contacto1"
+        "contacto2"
+        "contacto3";
+    }
+    
 }
