@@ -180,22 +180,42 @@ h1 {
 @media (max-width: 768px) {
   .conoceprod {
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: repeat(6, auto);
-    gap: 1vw;
+    grid-template-columns: 92vw;
+    grid-template-rows: repeat(6, 400px);
+    gap: 0px;
     margin: 4vw;
+    grid-template-areas: "prodindex1" "prodindex2" "prodindex3" "prodindex4" "prodindex5" "prodindex6";
+  }
+  .conoceprod .prodindex1 div img, .conoceprod .prodindex2 div img, .conoceprod .prodindex3 div img, .conoceprod .prodindex4 div img, .conoceprod .prodindex5 div img, .conoceprod .prodindex6 div img {
+    object-fit: contain;
+    width: 92vw;
+    height: 95%;
+  }
+  .conoceprod .encima {
+    height: 400px;
+    width: 92vw;
+  }
+  .conoceprod .encima p {
+    text-align: center;
+  }
+  .conoceprod .encima:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+  }
+  #trespalabras {
+    margin: 0px;
+  }
+  #pal-larga {
+    font-size: 70px;
   }
 }
-.prodindex1 {
-  grid-area: prodindex1;
-}
-.prodindex1 div {
+.prodindex1 div, .prodindex2 div, .prodindex3 div, .prodindex4 div, .prodindex5 div, .prodindex6 div {
   position: absolute;
 }
-.prodindex1 div img {
+.prodindex1 div img, .prodindex2 div img, .prodindex3 div img, .prodindex4 div img, .prodindex5 div img, .prodindex6 div img {
   height: 400px;
   width: 45vw;
-  filter: brightness(0.5);
+  filter: brightness(0.6);
 }
 
 .encima {
@@ -203,6 +223,7 @@ h1 {
   width: 45vw;
   text-align: center;
   opacity: 0.6;
+  justify-items: center;
 }
 .encima a {
   text-decoration: none;
@@ -211,11 +232,23 @@ h1 {
   color: white;
   font-size: 75px;
   font-weight: bolder;
-  margin-top: 150px;
+  margin-top: 120px;
 }
 .encima:hover {
   transform: scale(1.4);
   transition: 0.5s;
+}
+
+#dospalabras {
+  margin-top: 80px;
+}
+
+#trespalabras {
+  margin-top: 33px;
+}
+
+.prodindex1 {
+  grid-area: prodindex1;
 }
 
 .prodindex2 {
