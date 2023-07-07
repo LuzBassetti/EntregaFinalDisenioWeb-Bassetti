@@ -19,7 +19,7 @@
 }
 
 .conoceprod {
-    @include grids(grid, repeat(2, 45vw), repeat(3, 350px), 2vw, 10px 4vw);
+    @include grids(grid, repeat(2, 45vw), repeat(3, 400px), 2vw, 10px 4vw);
     grid-template-areas:
         "prodindex1 prodindex2"
         "prodindex3 prodindex4"
@@ -34,9 +34,36 @@
 
 .prodindex1 {
     grid-area: prodindex1;
-    height: 100%;
-    width: 100%;
+    div{
+        position: absolute;
+        img{
+            height: 400px;
+            width: 45vw;
+            filter: brightness(0.5);
+        }
+    }
 }
+.encima{
+    height: 400px;
+    width: 45vw;
+    text-align: center;
+    opacity: 0.6;
+    a {
+        text-decoration: none;
+        p{
+            color: nth($paletacolores, 8);
+            font-size: map-get($formato, sizeProductos);
+            font-weight: map-get($formato, peso2);
+            
+            margin-top: 150px;
+        }  
+    }
+    &:hover{
+        transform: scale(1.4);
+        transition: 0.5s;
+    }
+}
+    
 
 .prodindex2 {
     grid-area: prodindex2;

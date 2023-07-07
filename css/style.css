@@ -171,7 +171,7 @@ h1 {
 .conoceprod {
   display: grid;
   grid-template-columns: repeat(2, 45vw);
-  grid-template-rows: repeat(3, 350px);
+  grid-template-rows: repeat(3, 400px);
   gap: 2vw;
   margin: 10px 4vw;
   grid-template-areas: "prodindex1 prodindex2" "prodindex3 prodindex4" "prodindex5 prodindex6";
@@ -188,8 +188,34 @@ h1 {
 }
 .prodindex1 {
   grid-area: prodindex1;
-  height: 100%;
-  width: 100%;
+}
+.prodindex1 div {
+  position: absolute;
+}
+.prodindex1 div img {
+  height: 400px;
+  width: 45vw;
+  filter: brightness(0.5);
+}
+
+.encima {
+  height: 400px;
+  width: 45vw;
+  text-align: center;
+  opacity: 0.6;
+}
+.encima a {
+  text-decoration: none;
+}
+.encima a p {
+  color: white;
+  font-size: 75px;
+  font-weight: bolder;
+  margin-top: 150px;
+}
+.encima:hover {
+  transform: scale(1.4);
+  transition: 0.5s;
 }
 
 .prodindex2 {
