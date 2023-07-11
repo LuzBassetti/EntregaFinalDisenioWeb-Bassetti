@@ -1,22 +1,20 @@
-.maincontacto{
-    text-align: center;
-}
 .contcentral{
     @include grids(grid, 45vw 45vw, auto auto, 2vw, 15px 4vw);
     grid-template-areas:
-    "contacto1 contacto3"
-    "contacto2 contacto3";
+    "contacto1 contacto2"
+    "contacto1 contacto3";
 }
 
 .contacto1{
     grid-area: contacto1;
-    align-self: center;
 }
 .contacto2{
     grid-area: contacto2;
+    margin-left: 36px;
 }
 .contacto3{
     grid-area: contacto3;
+    margin-left: 36px;
 }
 
 @media (max-width: 768px){

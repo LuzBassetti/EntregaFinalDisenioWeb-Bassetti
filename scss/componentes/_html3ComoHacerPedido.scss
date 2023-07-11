@@ -7,3 +7,15 @@
         width: 100%;
     }
 }
+@media (max-width: 768px) {
+    .contppalpedido{
+        @include grids(grid, 92vw, repeat (2, auto), 15px, 20px 4vw);
+        ul{
+            width: 100%;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    
+}

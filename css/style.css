@@ -448,30 +448,42 @@ main h1 {
   width: 100%;
 }
 
-.maincontacto {
-  text-align: center;
+@media (max-width: 768px) {
+  .contppalpedido {
+    display: grid;
+    grid-template-columns: 92vw;
+    grid-template-rows: repeat 2, auto;
+    gap: 15px;
+    margin: 20px 4vw;
+  }
+  .contppalpedido ul {
+    width: 100%;
+  }
+  .contppalpedido img {
+    width: 100%;
+  }
 }
-
 .contcentral {
   display: grid;
   grid-template-columns: 45vw 45vw;
   grid-template-rows: auto auto;
   gap: 2vw;
   margin: 15px 4vw;
-  grid-template-areas: "contacto1 contacto3" "contacto2 contacto3";
+  grid-template-areas: "contacto1 contacto2" "contacto1 contacto3";
 }
 
 .contacto1 {
   grid-area: contacto1;
-  align-self: center;
 }
 
 .contacto2 {
   grid-area: contacto2;
+  margin-left: 36px;
 }
 
 .contacto3 {
   grid-area: contacto3;
+  margin-left: 36px;
 }
 
 @media (max-width: 768px) {
