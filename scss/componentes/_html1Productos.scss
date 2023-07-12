@@ -1,43 +1,78 @@
-main h1{
+main h1 {
     text-align: center;
     margin-top: 30px;
 }
-.sectionprodA{
-    @include grids(grid, repeat(4, 22.25vw), repeat(2, auto), 1vw, 15px 4vw);
-    grid-template-areas: 
-    "img1 img1 texto texto"
-    "img2 img3 img4 img5";
+
+.sectionprodA {
+    @include grids(grid, repeat(6, 14.5vw), auto auto, 1vw, 15px 4vw);
+    grid-template-areas:
+        "img1 img1 img1 texto texto texto"
+        "img2 img3 img4 img5 img6 img7";
 }
-.sectionprodB{
-    @include grids(grid, repeat(4, 22.25vw), repeat(2, auto), 1vw, 36px 4vw);
-    grid-template-areas: 
-    "texto texto img1 img1"
-    "img2 img3 img4 img5";
+
+.sectionprodB {
+    @include grids(grid, repeat(6, 14.5vw), repeat(2, auto), 1vw, 36px 4vw);
+    grid-template-areas:
+        "texto texto texto img1 img1 img1"
+        "img2 img3 img4 img5 img6 img7";
 }
-.imgprod1{
+
+@media (max-width: 768px) {
+    .sectionprodA, .sectionprodB {
+        @include grids(grid, 92vw, repeat(2, auto), 1vw, 15px 4vw);
+        grid-template-areas:
+            "texto"
+            "img1";
+    }
+    .imgprod2, .imgprod3, .imgprod4, .imgprod5, .imgprod6{
+        display: none;
+    }
+}
+
+.imgprod1 {
     grid-area: img1;
-    width: 100%;
+    width: 70%;
+    object-fit: contain;
+    justify-self: center;
+    justify-items: center;
 }
-.textoprod{
+
+.textoprod {
     grid-area: texto;
     width: 100%;
 }
-.textoprod h2, .textoprod p{
+
+.textoprod h2,
+.textoprod p {
     text-align: left;
 }
-.imgprod2{
+
+.imgprod2 {
     grid-area: img2;
     width: 100%;
 }
-.imgprod3{
+
+.imgprod3 {
     grid-area: img3;
     width: 100%;
 }
-.imgprod4{
+
+.imgprod4 {
     grid-area: img4;
     width: 100%;
 }
-.imgprod5{
+
+.imgprod5 {
     grid-area: img5;
+    width: 100%;
+}
+
+.imgprod6 {
+    grid-area: img6;
+    width: 100%;
+}
+
+.imgprod7 {
+    grid-area: img7;
     width: 100%;
 }

@@ -338,25 +338,41 @@ main h1 {
 
 .sectionprodA {
   display: grid;
-  grid-template-columns: repeat(4, 22.25vw);
-  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(6, 14.5vw);
+  grid-template-rows: auto auto;
   gap: 1vw;
   margin: 15px 4vw;
-  grid-template-areas: "img1 img1 texto texto" "img2 img3 img4 img5";
+  grid-template-areas: "img1 img1 img1 texto texto texto" "img2 img3 img4 img5 img6 img7";
 }
 
 .sectionprodB {
   display: grid;
-  grid-template-columns: repeat(4, 22.25vw);
+  grid-template-columns: repeat(6, 14.5vw);
   grid-template-rows: repeat(2, auto);
   gap: 1vw;
   margin: 36px 4vw;
-  grid-template-areas: "texto texto img1 img1" "img2 img3 img4 img5";
+  grid-template-areas: "texto texto texto img1 img1 img1" "img2 img3 img4 img5 img6 img7";
 }
 
+@media (max-width: 768px) {
+  .sectionprodA, .sectionprodB {
+    display: grid;
+    grid-template-columns: 92vw;
+    grid-template-rows: repeat(2, auto);
+    gap: 1vw;
+    margin: 15px 4vw;
+    grid-template-areas: "texto" "img1";
+  }
+  .imgprod2, .imgprod3, .imgprod4, .imgprod5, .imgprod6 {
+    display: none;
+  }
+}
 .imgprod1 {
   grid-area: img1;
-  width: 100%;
+  width: 70%;
+  object-fit: contain;
+  justify-self: center;
+  justify-items: center;
 }
 
 .textoprod {
@@ -364,7 +380,8 @@ main h1 {
   width: 100%;
 }
 
-.textoprod h2, .textoprod p {
+.textoprod h2,
+.textoprod p {
   text-align: left;
 }
 
@@ -385,6 +402,16 @@ main h1 {
 
 .imgprod5 {
   grid-area: img5;
+  width: 100%;
+}
+
+.imgprod6 {
+  grid-area: img6;
+  width: 100%;
+}
+
+.imgprod7 {
+  grid-area: img7;
   width: 100%;
 }
 
@@ -500,7 +527,7 @@ main h1 {
   padding-top: 10px;
   padding-left: 10px;
   padding-bottom: 10px;
-  background-color: #8e6b5b;
+  background-color: #908171;
   display: flex;
   justify-content: space-between;
   font-family: "Raleway", serif;
