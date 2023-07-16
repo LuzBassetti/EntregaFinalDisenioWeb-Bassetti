@@ -177,44 +177,14 @@ h1 {
   grid-template-areas: "prodindex1 prodindex2" "prodindex3 prodindex4" "prodindex5 prodindex6";
 }
 
-@media (max-width: 768px) {
-  .conoceprod {
-    display: grid;
-    grid-template-columns: 92vw;
-    grid-template-rows: repeat(6, 400px);
-    gap: 0px;
-    margin: 4vw;
-    grid-template-areas: "prodindex1" "prodindex2" "prodindex3" "prodindex4" "prodindex5" "prodindex6";
-  }
-  .conoceprod .prodindex1 div img, .conoceprod .prodindex2 div img, .conoceprod .prodindex3 div img, .conoceprod .prodindex4 div img, .conoceprod .prodindex5 div img, .conoceprod .prodindex6 div img {
-    object-fit: contain;
-    width: 92vw;
-    height: 95%;
-  }
-  .conoceprod .encima {
-    height: 400px;
-    width: 92vw;
-  }
-  .conoceprod .encima p {
-    text-align: center;
-  }
-  .conoceprod .encima:hover {
-    transform: scale(1.2);
-    transition: 0.5s;
-  }
-  #trespalabras {
-    margin: 0px;
-  }
-  #pal-larga {
-    font-size: 70px;
-  }
-}
 .prodindex1 div, .prodindex2 div, .prodindex3 div, .prodindex4 div, .prodindex5 div, .prodindex6 div {
   position: absolute;
 }
 .prodindex1 div img, .prodindex2 div img, .prodindex3 div img, .prodindex4 div img, .prodindex5 div img, .prodindex6 div img {
-  height: 400px;
   width: 45vw;
+  filter: brightness(0.8);
+}
+.prodindex1 div img:hover, .prodindex2 div img:hover, .prodindex3 div img:hover, .prodindex4 div img:hover, .prodindex5 div img:hover, .prodindex6 div img:hover {
   filter: brightness(0.6);
 }
 
@@ -224,6 +194,7 @@ h1 {
   text-align: center;
   opacity: 0.6;
   justify-items: center;
+  overflow: hidden;
 }
 .encima a {
   text-decoration: none;
@@ -237,6 +208,7 @@ h1 {
 .encima:hover {
   transform: scale(1.4);
   transition: 0.5s;
+  opacity: 0.8;
 }
 
 #dospalabras {
@@ -281,6 +253,42 @@ h1 {
   height: 100%;
 }
 
+@media (max-width: 768px) {
+  .conoceprod {
+    display: grid;
+    grid-template-columns: 92vw;
+    grid-template-rows: repeat(6, 400px);
+    gap: 0px;
+    margin: 0 4vw;
+    grid-template-areas: "prodindex1" "prodindex2" "prodindex3" "prodindex4" "prodindex5" "prodindex6";
+  }
+  .conoceprod .prodindex1 div img, .conoceprod .prodindex2 div img, .conoceprod .prodindex3 div img, .conoceprod .prodindex4 div img, .conoceprod .prodindex5 div img, .conoceprod .prodindex6 div img {
+    object-fit: contain;
+    width: 92vw;
+    height: 95%;
+  }
+  .conoceprod .prodindex1 div img:hover, .conoceprod .prodindex2 div img:hover, .conoceprod .prodindex3 div img:hover, .conoceprod .prodindex4 div img:hover, .conoceprod .prodindex5 div img:hover, .conoceprod .prodindex6 div img:hover {
+    filter: brightness(0.6);
+  }
+  .conoceprod .encima {
+    height: 400px;
+    width: 92vw;
+  }
+  .conoceprod .encima p {
+    text-align: center;
+  }
+  .conoceprod .encima:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+    opacity: 0.8;
+  }
+  #trespalabras {
+    margin: 0px;
+  }
+  #pal-larga {
+    font-size: 70px;
+  }
+}
 .contactanos {
   background-color: #f8f3dd;
   text-align: center;

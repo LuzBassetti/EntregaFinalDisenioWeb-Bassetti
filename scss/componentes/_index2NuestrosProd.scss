@@ -26,54 +26,16 @@
         "prodindex5 prodindex6";
 }
 
-@media (max-width: 768px) {
-    .conoceprod {
-        @include grids(grid, 92vw, repeat(6, 400px), 0px, 4vw);
-        grid-template-areas:
-        "prodindex1"
-        "prodindex2"
-        "prodindex3"
-        "prodindex4"
-        "prodindex5"
-        "prodindex6";
-        .prodindex1, .prodindex2, .prodindex3, .prodindex4, .prodindex5, .prodindex6{
-            div img{
-                object-fit: contain;
-                width: 92vw;
-                height: 95%;
-            }
-        }
-        .encima{
-            height: 400px;
-            width: 92vw;
-            p{
-                // justify-content: center;
-                text-align: center;
-                // position: relative;
-                // justify-self: center;
-                // align-self: center;
-            }
-            &:hover{
-                transform: scale(1.2);
-                transition: 0.5s;
-            }
-        }
-    }
-    #trespalabras{
-        margin: 0px;
-    }
-    #pal-larga{
-        font-size: 70px;
-    }
-}
-
 .prodindex1, .prodindex2, .prodindex3, .prodindex4, .prodindex5, .prodindex6 {
     div{
         position: absolute;
         img{
-            height: 400px;
+            // height: 400px;
             width: 45vw;
-            filter: brightness(0.6);
+            filter: brightness(0.8);
+            &:hover{
+                filter: brightness(0.6);
+            }
         }
     }
 }
@@ -83,6 +45,7 @@
     text-align: center;
     opacity: 0.6;
     justify-items: center;
+    overflow: hidden;
     a {
         text-decoration: none;
         p{
@@ -95,6 +58,7 @@
     &:hover{
         transform: scale(1.4);
         transition: 0.5s;
+        opacity: 0.8;
     }
 }
 #dospalabras{
@@ -134,4 +98,45 @@
     grid-area: prodindex6;
     width: 100%;
     height: 100%;
+}
+
+@media (max-width: 768px) {
+    .conoceprod {
+        @include grids(grid, 92vw, repeat(6, 400px), 0px, 0 4vw);
+        grid-template-areas:
+        "prodindex1"
+        "prodindex2"
+        "prodindex3"
+        "prodindex4"
+        "prodindex5"
+        "prodindex6";
+        .prodindex1, .prodindex2, .prodindex3, .prodindex4, .prodindex5, .prodindex6{
+            div img{
+                object-fit: contain;
+                width: 92vw;
+                height: 95%;
+                &:hover{
+                    filter: brightness(0.6);
+                }
+            }
+        }
+        .encima{
+            height: 400px;
+            width: 92vw;
+            p{
+                text-align: center;
+            }
+            &:hover{
+                transform: scale(1.2);
+                transition: 0.5s;
+                opacity: 0.8;
+            }
+        }
+    }
+    #trespalabras{
+        margin: 0px;
+    }
+    #pal-larga{
+        font-size: 70px;
+    }
 }

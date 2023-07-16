@@ -112,9 +112,30 @@
     <main class="maincontacto">
         <h1>No dudes en escribirnos</h1>
         <div class="contcentral">
-            <div class="contacto1">
-                <!---ACA ES DONDE IRIA EL FORMULARIO-->
-            </div>
+            <form action="documento.php" method="get" class="contacto1">
+                <div class="mb-3">
+                    <label for="nombre" name="nombre">Nombre y Apellido</label>
+                    <input type="text" name="nombre" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="asunto" name="asunto">Asunto</label>
+                    <input type="text" name="asunto" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="tel" name="tel">Telefono de contacto</label>
+                    <input type="tel" name="tel" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                </div>
+                <input type="submit" value="Enviar">
+            </form>
+
             <div class="contacto2">
                 <div class="telefono">
                     <img src="../img/phonecall.png" alt="Telefono">
