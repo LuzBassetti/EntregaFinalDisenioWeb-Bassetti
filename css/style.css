@@ -171,44 +171,51 @@ h1 {
 .conoceprod {
   display: grid;
   grid-template-columns: repeat(2, 45vw);
-  grid-template-rows: repeat(3, 400px);
+  grid-template-rows: repeat(3, auto);
   gap: 2vw;
   margin: 10px 4vw;
   grid-template-areas: "prodindex1 prodindex2" "prodindex3 prodindex4" "prodindex5 prodindex6";
 }
 
-.prodindex1 div, .prodindex2 div, .prodindex3 div, .prodindex4 div, .prodindex5 div, .prodindex6 div {
-  position: absolute;
+.prodindex1, .prodindex2, .prodindex3, .prodindex4, .prodindex5, .prodindex6 {
+  overflow: hidden;
 }
 .prodindex1 div img, .prodindex2 div img, .prodindex3 div img, .prodindex4 div img, .prodindex5 div img, .prodindex6 div img {
   width: 45vw;
-  filter: brightness(0.8);
+  filter: brightness(0.9);
 }
 .prodindex1 div img:hover, .prodindex2 div img:hover, .prodindex3 div img:hover, .prodindex4 div img:hover, .prodindex5 div img:hover, .prodindex6 div img:hover {
   filter: brightness(0.6);
 }
 
 .encima {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 400px;
   width: 45vw;
   text-align: center;
   opacity: 0.6;
   justify-items: center;
-  overflow: hidden;
 }
 .encima a {
   text-decoration: none;
 }
 .encima a p {
   color: white;
-  font-size: 75px;
+  font-size: 500%;
   font-weight: bolder;
   margin-top: 120px;
 }
 .encima:hover {
-  transform: scale(1.4);
+  transform: scale(1.2);
   transition: 0.5s;
-  opacity: 0.8;
+  opacity: 0.9;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.indexprodimg {
+  position: relative;
 }
 
 #dospalabras {
@@ -257,10 +264,13 @@ h1 {
   .conoceprod {
     display: grid;
     grid-template-columns: 92vw;
-    grid-template-rows: repeat(6, 400px);
+    grid-template-rows: repeat(6, auto);
     gap: 0px;
     margin: 0 4vw;
     grid-template-areas: "prodindex1" "prodindex2" "prodindex3" "prodindex4" "prodindex5" "prodindex6";
+  }
+  .conoceprod .prodindex1, .conoceprod .prodindex2, .conoceprod .prodindex3, .conoceprod .prodindex4, .conoceprod .prodindex5, .conoceprod .prodindex6 {
+    overflow: hidden;
   }
   .conoceprod .prodindex1 div img, .conoceprod .prodindex2 div img, .conoceprod .prodindex3 div img, .conoceprod .prodindex4 div img, .conoceprod .prodindex5 div img, .conoceprod .prodindex6 div img {
     object-fit: contain;
@@ -276,6 +286,8 @@ h1 {
   }
   .conoceprod .encima p {
     text-align: center;
+    margin-top: 60px;
+    font-size: 500%;
   }
   .conoceprod .encima:hover {
     transform: scale(1.2);
@@ -284,9 +296,13 @@ h1 {
   }
   #trespalabras {
     margin: 0px;
+    font-size: 350%;
+  }
+  #dospalabras, #dospalabrascortas {
+    margin-top: 15px;
   }
   #pal-larga {
-    font-size: 70px;
+    font-size: 345%;
   }
 }
 .contactanos {
