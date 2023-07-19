@@ -347,10 +347,18 @@ main h1 {
 .sectionprodA {
   display: grid;
   grid-template-columns: repeat(6, 14.5vw);
-  grid-template-rows: auto auto;
+  grid-template-rows: repeat(2, auto);
   gap: 1vw;
-  margin: 15px 4vw;
+  margin: 15px 3vw;
   grid-template-areas: "img1 img1 img1 texto texto texto" "img2 img3 img4 img5 img6 img7";
+  padding: 2vw;
+  transition: box-shadow 0.7s;
+}
+.sectionprodA:hover {
+  box-shadow: 0 0 5px 10px #F25C5E;
+}
+.sectionprodA:not(:hover) {
+  box-shadow: 0 0 5px 10px rgba(0, 0, 0, 0);
 }
 
 .sectionprodB {
@@ -358,8 +366,16 @@ main h1 {
   grid-template-columns: repeat(6, 14.5vw);
   grid-template-rows: repeat(2, auto);
   gap: 1vw;
-  margin: 36px 4vw;
+  margin: 36px 3vw;
   grid-template-areas: "texto texto texto img1 img1 img1" "img2 img3 img4 img5 img6 img7";
+  padding: 2vw;
+  transition: box-shadow 0.7s;
+}
+.sectionprodB:hover {
+  box-shadow: 0 0 5px 10px #F25C5E;
+}
+.sectionprodB:not(:hover) {
+  box-shadow: 0 0 5px 10px rgba(0, 0, 0, 0);
 }
 
 @media (max-width: 768px) {
@@ -377,7 +393,7 @@ main h1 {
 }
 .imgprod1 {
   grid-area: img1;
-  width: 70%;
+  width: 80%;
   object-fit: contain;
   justify-self: center;
   justify-items: center;
@@ -434,7 +450,8 @@ main h1 {
 
 .hist1 {
   grid-area: img1;
-  width: 100%;
+  justify-self: center;
+  width: 80%;
 }
 
 .hist2 {
