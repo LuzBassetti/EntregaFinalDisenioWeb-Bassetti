@@ -295,14 +295,14 @@ h1 {
     opacity: 0.8;
   }
   #trespalabras {
-    margin: 0px;
-    font-size: 350%;
+    margin: 10px;
+    font-size: 300%;
   }
   #dospalabras, #dospalabrascortas {
     margin-top: 15px;
   }
   #pal-larga {
-    font-size: 345%;
+    font-size: 295%;
   }
 }
 .contactanos {
