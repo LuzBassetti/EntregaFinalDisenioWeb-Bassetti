@@ -595,5 +595,15 @@ main h1 {
   display: flex;
   font-family: "Raleway", serif !important;
 }
+@media (max-width: 768px) {
+  .telefono img, .mail img {
+    height: 35px;
+    width: 35px;
+  }
+  #pie a img {
+    height: 100px;
+    width: 100px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
