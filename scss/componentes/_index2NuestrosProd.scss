@@ -70,7 +70,10 @@
     margin-top: 80px;
 }
 #trespalabras{
-    margin-top: 33px;
+    margin-top: 25px;
+}
+#pal-larga{
+    font-size: 490%;
 }
 .prodindex1{
     grid-area: prodindex1;
@@ -132,7 +135,7 @@
             p{
                 text-align: center;
                 margin-top: 60px;
-                font-size: 500%;
+                font-size: 430%;
             }
             &:hover{
                 transform: scale(1.2);
@@ -143,10 +146,10 @@
     }
     #trespalabras{
         margin: 10px;
-        font-size: 300%;
+        font-size: 298%;
     }
     #dospalabras, #dospalabrascortas{
-        margin-top: 15px;
+        margin-top: 0;
     }
     #pal-larga{
         font-size: 295%;
