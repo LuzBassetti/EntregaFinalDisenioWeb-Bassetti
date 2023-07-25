@@ -25,5 +25,14 @@
         "contacto2"
         "contacto3";
     }
-    
+    .contacto2{
+        margin-left: 13px;
+    }
+    .contacto3{
+        margin-left: 13px;
+        iframe{
+            width: 350px;
+            height: 270px;
+        }
+    }
 }

@@ -567,6 +567,16 @@ main h1 {
     margin: 15px 4vw;
     grid-template-areas: "contacto1" "contacto2" "contacto3";
   }
+  .contacto2 {
+    margin-left: 13px;
+  }
+  .contacto3 {
+    margin-left: 13px;
+  }
+  .contacto3 iframe {
+    width: 350px;
+    height: 270px;
+  }
 }
 #pie {
   padding-top: 10px;
